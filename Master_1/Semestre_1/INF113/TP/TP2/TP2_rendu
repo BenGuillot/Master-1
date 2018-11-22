@@ -149,12 +149,14 @@ Donc la requete est :
 SELECT F.*, A.nom AS nom_acteurs
 FROM FILM F, ACTEUR A, JOUEDANS J
 WHERE F.titre=J.titreFilm
+AND F.annee=J.anneeFilm
 AND J.nomActeur=A.nom
-AND F.titre IN
+AND (F.titre, F.annee) IN
 (
-SELECT F.titre
+SELECT F.titre, F.annee
 FROM FILM F, ACTEUR A, JOUEDANS J
 WHERE F.titre=J.titreFilm
+AND F.cout>1000000
 AND J.nomActeur=A.nom
 GROUP BY F.titre, F.annee
 HAVING COUNT(A.nom)>2
