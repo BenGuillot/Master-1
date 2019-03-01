@@ -10,7 +10,7 @@ public class PersonnelGroup extends OrganizationElement {
 
     public PersonnelGroup(String name) {
         this.name = name;
-        personnels = new ArrayList<>();
+        personnels = new ArrayList();
     }
 
     public String getName() {

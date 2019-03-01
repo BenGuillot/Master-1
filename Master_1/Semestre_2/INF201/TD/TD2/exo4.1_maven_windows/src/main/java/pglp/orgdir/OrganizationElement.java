@@ -13,9 +13,8 @@ public abstract class OrganizationElement implements Iterable<OrganizationElemen
         this.traversalStrategy = traversalStrategy;
     }
 
-    @Override
     public Iterator<OrganizationElement> iterator() {
-        List<OrganizationElement> list = new ArrayList<>();
+        List<OrganizationElement> list = new ArrayList();
         list.add(this);
         switch (traversalStrategy) {
             case DFS: addSubElementsDFS(list); break;

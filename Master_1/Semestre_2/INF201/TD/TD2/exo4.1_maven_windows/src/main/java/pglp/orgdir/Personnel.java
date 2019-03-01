@@ -70,7 +70,7 @@ public class Personnel extends OrganizationElement {
     public Builder(String firstname, String lastname) {
       this.firstname = firstname;
       this.lastname = lastname;
-      functions = new ArrayList<>();
+      functions = new ArrayList();
       dateOfBirth = DEFAULT_DATE;
     }
 
