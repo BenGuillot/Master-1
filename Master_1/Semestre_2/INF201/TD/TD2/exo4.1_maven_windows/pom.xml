@@ -12,13 +12,8 @@
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-<<<<<<< HEAD:Master_1/Semestre_2/INF201/TD/TD2/exo4.1_maven/pom.xml
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
-=======
-	<maven.compiler.source> 1.8</maven.compiler.source>
-	<maven.compiler.target> 1.8</maven.compiler.target>
->>>>>>> f13b377a84d694c19e4959300c914fc37186b50a:Master_1/Semestre_2/INF201/TD/TD2/exo4.1_maven_windows/pom.xml
   </properties>
 
 <build>
