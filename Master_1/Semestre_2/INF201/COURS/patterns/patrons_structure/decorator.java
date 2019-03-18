@@ -1,8 +1,15 @@
-// ______________________________________________________________________
+/*
+ * Decorateur permet d'implémenter une classe puis de lui rajouter des 
+ * fonctionnalités. 
+ */
+
+
 // Déclarations
 public abstract class Voiture {
+	
+	private String nom;
+	private String marque;
 
-	String nom, marque; 
 	abstract int getPrix();
 	abstract int getPoids();
 }

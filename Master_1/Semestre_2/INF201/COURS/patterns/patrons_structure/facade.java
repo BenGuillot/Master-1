@@ -1,4 +1,9 @@
 /**
+ * Facade permet d'utiliser les fonctionnalités de plusieurs classes à 
+ * partir d'une seule (Facade) 
+ */
+
+/**
  * Classe implémentant diverses fonctionnalités.
  */
 public class ClasseA {

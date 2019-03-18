@@ -70,7 +70,7 @@ public class Adaptateur extends ImplAdapte implements Standard {
     }
 }
 
-// OU 
+// OU BIEN
 
 /**
  * Adapte l'implémentation non standard avec la composition.
