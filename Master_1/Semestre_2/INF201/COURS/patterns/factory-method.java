@@ -44,7 +44,7 @@ public class UsinePomme extends ComplexeIndustriel {
 
 ///////////////////////////////////////////
 
-public class ProduitFactory2 extends ComplexeIndustriel {
+public class UsinePoire extends ComplexeIndustriel {
 	protected Fruit createFruit() {
 		return new Poire();
 	}

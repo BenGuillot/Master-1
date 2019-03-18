@@ -1,3 +1,8 @@
+/*
+	Abstract Factory method permet la création d’objets sans préciser explicitement la classe à utiliser. Les
+	objets sont créés en utilisant une méthode de fabrication redéfinie dans des sous-classes.
+*/
+
 public class Client {
 
 	public static void main(String[] args) {
@@ -11,6 +16,7 @@ public class Client {
 		fruit = usineCarottePomme.getFruit(); 
 		legume.afficheLegume(); // "Je suis une Carotte"
 		fruit.afficheFruit(); // "Je suis une Pomme"
+		
 		System.out.println("Utilisation de la seconde fabrique");
 		legume = usineHaricotPoire.getLegume();
 		fruit = usineHaricotPoire.getFruit(); 
@@ -24,18 +30,18 @@ public class Client {
 public interface ComplexeIndustriel {
 
 	public Legume getLegume();
-	public ProduitB getFruit();
+	public Fruit getFruit();
 }
 
 ////////////////////////////////////////////////////////
 
 public class UsineCarottePomme implements ComplexeIndustriel {
 
-	public ProduitA getLegume() {
+	public Legume getLegume() {
 		return new Carotte();
 	}
 
-	public ProduitB getFruit() {
+	public Fruit getFruit() {
 		return new Pomme();
 	}
 }
@@ -44,11 +50,11 @@ public class UsineCarottePomme implements ComplexeIndustriel {
 
 public class UsineHaricotPoire implements ComplexeIndustriel {
 
-	public ProduitA getLegume() {
+	public Legume getLegume() {
 		return new Haricot();
 	}
 
-	public ProduitB getFruit() {
+	public Fruit getFruit() {
 		return new Poire();
 	}
 }
@@ -56,7 +62,6 @@ public class UsineHaricotPoire implements ComplexeIndustriel {
 ///////////////////////////////////
 
 public abstract class Legume {
-
 	public abstract void afficheLegume();
 }
 
@@ -81,7 +86,6 @@ public class Haricot extends Legume {
 //////////////////////////////////
 
 public abstract class Fruit {
-
 	public abstract void afficheFruit();
 }
 
